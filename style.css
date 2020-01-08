@@ -1,0 +1,202 @@
+/* obrobe so v pomoč pri oblikovanju strani, sicer so skrite v komentarju:
+
+table, th, td, div, header, nav, main, article {
+	border: 1px black solid;
+}
+*/
+
+/* SPLOŠNO: */
+
+* {box-sizing: border-box;}
+
+body {
+    background-color: #f2f2f2;
+	font-family: Arial;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+	color: #0000ff;
+	letter-spacing: 2px;
+	line-height: 5px;
+}
+
+h2 {
+    font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: #33cc33;
+	letter-spacing: 2px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: brown;
+}
+
+a {text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+.bold {font-weight: bold;}
+
+
+/* HEADER, NAV : */
+
+header, nav {
+    width: 1000px;
+    height: 60px;
+    position: relative;
+}
+
+header {background-color: #e6f3ff;}
+
+nav {border-bottom: 2px solid blue;}
+
+.logo, .user, .search, .menu {
+    width: 500px;
+    height: 60px;
+    position: absolute;
+}
+
+.logo {padding-left: 20px;}
+
+.user {
+    left: 500px;
+    padding-top: 10px;
+}
+
+.search {
+    color: blue;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.menu {left: 500px;}
+
+
+.find {
+    width: 350px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+	color: blue;
+	background-color: #e6e6e6;
+	margin-top: 15px;
+}
+
+.button:hover {background-color: #cccccc;}
+
+.active {font-weight: bold;}
+
+
+/* INDEX.HTML- MAIN : */
+
+main {
+    width: 1000px;
+    position: absolute;
+    top: 130px;
+}
+
+#user_picture, article, #table_left, #table_right {
+    width: 500px;
+    position: absolute;
+}
+
+#user_picture, article {height: 350px;}
+
+#profile_pic {
+	height: 280px;
+	width: auto;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#profile_pic:hover {background-color: #e6f3ff;}
+
+article {
+    left: 500px;
+    padding: 20px 30px;
+    overflow: scroll;
+}
+
+#about_me {color: #006633;}
+
+#table_left, #table_right {
+    height: 400px;
+    top: 350px;
+}
+
+#table_left {padding-top: 20px;}
+
+#table_right {
+    left: 500px;
+    padding-top: 60px;
+}
+
+table {
+    width: 400px;
+    cellpadding: 3px;
+}
+
+th {
+	color: blue;
+	font-weight: normal;
+	text-align: right;
+}
+
+td {
+	color: #006633;
+	padding-left: 5px;
+}
+
+td a {color: #006633;}
+
+.hobiji {padding-bottom: 35px;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* PRIJATELJI.HTML : */
+
+#main_friend {padding-top:20px;}
+
+#friend_h2 {margin-left: 40px;}
+
+.friend {
+    height: 330px;
+    width: 260px;
+    padding: 0px 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+}
+
+.friend:hover {background-color: #e6f3ff;}
+
+/* If picture width >= height : */
+.friend_pic_x {
+	width: 240px;
+	height: auto;
+}
+
+/* If picture width < height : */
+.friend_pic_y {
+	height: 240px;
+	width: auto;
+}
+
