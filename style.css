@@ -200,3 +200,9 @@ ul {
     width: auto;
 }
 
+/* SPOROČILA.HTML, RAČUN.HTML :*/
+
+.main_padding {
+    padding-top: 20px;
+    padding-left: 60px;
+}
